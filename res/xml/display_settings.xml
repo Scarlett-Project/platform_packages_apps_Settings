@@ -20,7 +20,7 @@
     android:key="display_settings_screen"
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display"
-    settings:initialExpandedChildrenCount="5">
+    settings:initialExpandedChildrenCount="6">
 
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
@@ -62,6 +62,12 @@
         settings:useAdminDisabledSummary="true"
         settings:controller="com.android.settings.display.WallpaperPreferenceController">
     </com.android.settingslib.RestrictedPreference>
+	
+    <com.android.settings.aosp.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
 
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.display.TimeoutListPreference
