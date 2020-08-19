@@ -20,7 +20,7 @@
     android:key="display_settings_screen"
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display"
-    settings:initialExpandedChildrenCount="6">
+    settings:initialExpandedChildrenCount="7">
 
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
@@ -68,6 +68,12 @@
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
+
+    <com.android.settings.aosp.preferences.SystemSettingSwitchPreference
+        android:key="data_disabled_icon"
+        android:title="@string/data_disabled_icon_title"
+        android:summary="@string/data_disabled_icon_summary"
+        android:defaultValue="true"/>
 
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.display.TimeoutListPreference
